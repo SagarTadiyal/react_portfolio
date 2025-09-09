@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sagar Tadiyal — Portfolio</title>
     <meta name="description" content="Clean, minimal, and professional portfolio for an aspiring Data Scientist & Web Developer." />
     <meta name="keywords" content="Portfolio, Data Scientist, Web Developer, React, Tailwind, Sagar Tadiyal" />
     <meta name="author" content="Sagar Tadiyal" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
@@ -15,11 +18,13 @@
     <meta property="og:image" content="/assets/og-card.png" />
     <meta property="og:url" content="https://example.com" />
 
+     <!-- Babel Standalone (transpiles JSX on the fly) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Favicon (optional simple data-uri) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><rect width=%27100%27 height=%27100%27 fill=%27%230a84ff%27/><text x=%2750%27 y=%2758%27 font-size=%2756%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27>S</text></svg>">
   </head>
   <body class="bg-surface text-text antialiased">
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="text/babel" src="/src/main.jsx"></script>
   </body>
 </html>
