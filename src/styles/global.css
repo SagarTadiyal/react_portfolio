@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-surface text-text dark:bg-surface-dark dark:text-text-dark; }
+  .container-slim { @apply max-w-6xl mx-auto px-4; }
+  section { @apply py-20; }
+  .card { @apply rounded-xl bg-white/80 dark:bg-white/5 backdrop-blur border border-black/5 dark:border-white/10 shadow-soft; }
+}
